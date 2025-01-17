@@ -3,7 +3,7 @@ VAR is_interested = false
 VAR pro_open = false
 VAR every = 0
 
-Hey friends. So you've expressed interest in a writing group specialising in interactive stories using ink.
+Hey friends. So you've expressed interest in a writing group specialising in interactive stories using the ink language.
 
 Please enter your name: 
 #INPUT
@@ -47,7 +47,7 @@ Noted
 
 I'll try to introduce a new feature of ink each session. 
 
-I also think if we can make it the day of the week that would make it easier, with less cognative load and organising needed. Obviously that's up to you.
+I think if we can make it the same day of the week that would make it easier, with less cognative load and organising needed. Obviously that's up to you.
 + [continue] 
 -
 
