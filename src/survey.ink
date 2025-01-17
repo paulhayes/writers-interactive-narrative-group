@@ -1,25 +1,17 @@
-VAR name = ""
+VAR name = "nobody"
 VAR is_interested = false
 VAR pro_open = false
 VAR every = 0
+
 Hey friends. So you've expressed interest in a writing group specialising in interactive stories using ink.
 
-
-Please select your name: 
-+ Rob 
-~ name="Rob"
-+ Emma 
-~ name="Emma"
-+ Amy 
-~ name="Amy"
-+ Ade 
-~ name="Ade" 
-+ Anna
-~ name="Anna"
+Please enter your name: 
+#INPUT
++ [continue] 
 
 -
 
-Are you still interested?
+Hi {name}! Are you still interested?
 
 + Yes
     ~is_interested=true
@@ -42,7 +34,7 @@ Great. Well I'm thinking each session will be 2 hours long, and we'll have a ses
 + Sounds good to me
 Great
 ~every=2
-+ I'd prefer weekly
++ I'd prefer weekly 
 Blimey, so enthusiastic!
 ~every=1
 + Could we make it once a month
@@ -61,7 +53,7 @@ I also think if we can make it the day of the week that would make it easier, wi
 
 
 
-I'd like it if we put everything we publish what we write onto a single site. I'd be willing to do the hosting. Would you be okay with this idea? Each author would choose if their story would be credited or published anonymously.
+I'd like it if we publish everything we write onto a single site. I'd be willing to do the hosting. Would you be okay with this idea? Each author would choose if their story would be credited or published anonymously.
 
 + I'd prefer if I what I wrote didn't get published.
 ~pro_open=false

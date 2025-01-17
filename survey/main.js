@@ -51,7 +51,7 @@
 
         var paragraphIndex = 0;
         var delay = 0.0;
-
+        var onNextChoice = null;
         // Don't over-scroll past new content
         var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
         console.log("continueStory");
@@ -138,6 +138,16 @@
                     });
                 }
 
+                else if(tag == "INPUT"){
+                    var inputElement = document.createElement('input');
+                    inputElement.innerHTML = paragraphText;
+                    inputElement.addEventListener('input',(event)=>{ story.variablesState.$('name',event.target.value); });
+                    storyContainer.appendChild(inputElement);
+                    onNextChoice = ()=>{
+                        inputElement.setAttribute('readonly','');
+                    };
+                }
+
                 // CLEAR - removes all existing content.
                 // RESTART - clears everything and restarts the story from the beginning
                 else if( tag == "CLEAR" || tag == "RESTART" ) {
@@ -187,7 +197,10 @@
             // Click on choice
             var choiceAnchorEl = choiceParagraphElement.querySelectorAll("a")[0];
             choiceAnchorEl.addEventListener("click", function(event) {
-
+                if(onNextChoice){
+                    onNextChoice();
+                    onNextChoice=null;
+                }
                 // Don't follow <a> link
                 event.preventDefault();
 
