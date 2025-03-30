@@ -4,7 +4,7 @@ Manifesto
 
 I believe interactive literature is a fantastic medium, with the ability to let readers explore mysteries, take risks with their characters, solve puzzles, and make meaningful choices to a story they are following. 
 
-One thing that has held the medium back in the digital age is a lack of mature tools for writing, testing, and reasing these interactive stories. 
+One thing that has held the medium back in the digital age is a lack of mature tools for writing, testing, and releasing these interactive stories. 
 
 However my recent experiences with the Ink language has made me enjoy writing interactive fiction, and excited me with the possibilities. Not only does it provide easy to use tools for writing and testing, but it somes with a huge array of libraries for delpoying to game engines, the web and hardware devices.
 
