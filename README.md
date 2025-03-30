@@ -1,6 +1,6 @@
-Writers Interactive Narrative Group
+## Writers Interactive Narrative Group ##
 
-Manifesto
+### Manifesto 
 
 I believe interactive literature is a fantastic medium, with the ability to let readers explore mysteries, take risks with their characters, solve puzzles, and make meaningful choices to a story they are following. 
 
